@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>Welcome to my blog</h1>
-    <p>It can achieve CI and CD</p>
+    <p>It can achieve CI and CD time2</p>
   </div>
 </template>
 
