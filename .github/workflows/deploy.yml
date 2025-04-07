@@ -9,10 +9,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: install nodejs
+      - name: checkout code
       - uses: actions/checkout@v3
 
-      - name: install deps
+      - name: set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: install dependencies
         run: npm install
 
       - name: build app
