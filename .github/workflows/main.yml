@@ -11,12 +11,17 @@ jobs:
     run-on: ubuntu-latest
 
   steps:
-    - uses: actions/checkout@v2
     - name: install nodejs
-      - uses: actions/setup-node@v4.03
-      with: 
-        node-version: "14.X" 
+    - uses: actions/checkout@v3
+
     - name: install deps
       run: npm install
+
     - name: build app
       run: npm run build
+
+    - name: deploy app
+      uses: JamesIves/github-pages-deploy-actions@v4.3.3
+      with:
+        branch: gh-pages
+        folder: dist
