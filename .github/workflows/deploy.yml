@@ -1,25 +1,14 @@
 name: Deploy to GitHub Pages
-
-on:
-  push:
-    branches: [ "main" ]  # 监听 main 分支的推送
-
+on: [push]
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4  # 拉取代码
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 20  # 指定 Node 版本
-
-      - name: Install dependencies
-      - run: npm install    # 安装依赖
-
-      - name: Build
-      - run: npm run build  # 构建项目
-
-      - name: Deploy
-      - uses: peaceiris/actions-gh-pages@v3  # 部署到 gh-pages
+          node-version: 20
+      - run: npm install && npm run build
+      - uses: peaceiris/actions-gh-pages@v3
         with:
-          # github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist  # Vue 默认构建输出目录
+          publish_dir: ./dist
