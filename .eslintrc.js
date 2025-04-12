@@ -6,7 +6,7 @@ module.exports = {
     es2021: true
   },
   extends: [
-    'vue3-essential', // plugin:vue/vue3-recommended比 vue3-essential 更严格的规则集
+    'plugin: vue3-essential', // plugin:vue/vue3-recommended比 vue3-essential 更严格的规则集
     'standard'
   ],
   parserOptions: {
