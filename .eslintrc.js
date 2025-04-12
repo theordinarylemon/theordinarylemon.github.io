@@ -5,10 +5,10 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: [
-    'plugin: vue3-essential', // plugin:vue/vue3-recommended比 vue3-essential 更严格的规则集
-    'standard'
-  ],
+//   extends: [
+//     'plugin: vue3-essential', // plugin:vue/vue3-recommended比 vue3-essential 更严格的规则集
+//     'standard'
+//   ],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
