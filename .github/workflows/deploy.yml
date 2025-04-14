@@ -8,7 +8,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: 
+      - run: |
         npm uninstall eslint-plugin-vue
         npm install eslint-plugin-vue@9.33.0 --save-dev
         npm install --legacy-peer-deps && npm run build
