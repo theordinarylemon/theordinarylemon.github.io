@@ -6,8 +6,8 @@ module.exports = {
         es2021: true
     },
     extends: [
-        'plugin:vue/vue3-recommanded', // plugin:vue/vue3-recommended比 vue3-essential 更严格的规则集
-        '@vue/standard-with-typescript'
+        'plugin:vue/recommanded', // plugin:vue/vue3-recommended比 vue3-essential 更严格的规则集
+        // '@vue/standard-with-typescript'
     ],
     parser: 'vue-eslint-parser',
     parserOptions: {
@@ -17,6 +17,5 @@ module.exports = {
         requireConfigFile: false // 避免需要 babel 配置文件
     },
     rules: {
-        'vue/multi-word-component-names': 'off' // 可选：关闭组件名多单词警告
     }
 }
