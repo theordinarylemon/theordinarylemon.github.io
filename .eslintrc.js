@@ -6,7 +6,7 @@ module.exports = {
         es2021: true
     },
     extends: [
-        'plugin:vue/recommanded', // plugin:vue/vue3-recommended比 vue3-essential 更严格的规则集
+        'plugin:vue/vue3-recommended', // plugin:vue/vue3-recommended比 vue3-essential 更严格的规则集
         // '@vue/standard-with-typescript'
     ],
     parser: 'vue-eslint-parser',
