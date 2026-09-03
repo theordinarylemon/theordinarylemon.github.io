@@ -1,10 +1,9 @@
 
 <template>
-<!-- <div class="header"> -->
-  <nav class="navbar" id="navbar">
+  <nav class="navbar" :class="{scrolled: isScrolled}">
     <a href="#" class="nav-logo">
-      <img src="src/assets/component/happy-girl-kitting.png" alt="happy-girl-kitting">
-      <span class="nav-logo-text">MY <span>BRAND NAME</span></span>
+      <img :src="knittingGirl" alt="happy-girl-kitting">
+      <span class="nav-logo-text">MY <span>WEBSITE</span></span>
     </a>
     <div class="nav-links">
       <router-link to="/">Home</router-link> 
@@ -12,7 +11,7 @@
       <router-link to="/about">About</router-link>
       <router-link to="/blog">Blog</router-link>
     </div>
-  <a href="#contact" class="nav-cta">Feature Your Book</a>
+  <a href="#contact" class="nav-cta">Get in touch</a>
   <div class="mobile-menu-btn" id="mobileMenuBtn" @click="openMobileMenu">
     <span></span>
     <span></span>
@@ -35,14 +34,26 @@
 </template>
 
 <script>
+import knittingGirl from "../assets/happy-girl-kitting.png"
 
 export default {
   name: "NavBar",
 
   data() {
     return {
-      isMenuOpen: false
+      isMenuOpen: false,
+      knittingGirl,
+      isScrolled: false
+
     };
+  },
+
+   mounted() {
+    window.addEventListener("scroll", this.handleScroll)
+  },
+
+  beforeUnmount() {
+    window.removeEventListener("scroll", this.handleScroll)
   },
 
   methods: {
@@ -62,9 +73,14 @@ export default {
       this.isMenuOpen = false;
 
       document.body.style.overflow = "";
+    },
+
+    handleScroll() {
+      this.isScrolled = window.scrollY > 50
     }
+    
   }
-};
+}
 
 // import {ref} from "vue";
 // const isMenuOpen = ref(false);
@@ -95,21 +111,22 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 20px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-            transition: var(--transition-smooth);
-        }
+        .navbar {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    padding: 20px 50px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    z-index: 1000;
+                    /* transition: var(--transition-smooth); */
+                    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                }
 
         .navbar.scrolled {
-            background: rgba(238, 233, 231, 0.95);
+            background: rgba(250, 235, 220, 0.95);
             backdrop-filter: blur(20px);
             padding: 15px 50px;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
@@ -150,7 +167,7 @@ export default {
             font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 1px;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
             position: relative;
             padding: 5px 0;
         }
@@ -199,7 +216,7 @@ export default {
         .mobile-menu-btn span {
             width: 30px;
             height: 2px;
-            background: var(--drak-gray);
+            background: var(--dark-gray);
             transition: var(--transition-smooth);
         }
  /* Mobile Menu */
@@ -230,7 +247,7 @@ export default {
         .mobile-menu-links a {
             font-size: 1.3rem;
             font-weight: 500;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
             transition: var(--transition-smooth);
         }
 
@@ -244,7 +261,7 @@ export default {
             top: 30px;
             right: 30px;
             font-size: 2rem;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
             cursor: pointer;
             transition: var(--transition-smooth);
         }

@@ -9,8 +9,8 @@
             --warm-blue: #6ea5bc;    
             --light-blue:  #84b2cf;
             --midnight: #877e79;
-            --drak-gray: #4b4a48;
-            --off-drak-gray:  #8e9498;
+            --dark-gray: #4b4a48;
+            --off-dark-gray:  #8e9498;
             --sky-blue: #80aed2;;
             --light-gray:  #727577;
             --medium-gray: #7893aa  ;
@@ -54,7 +54,7 @@
         body {
             font-family: var(--font-body);
             background-color: var(--light-beige);
-            color: var(--drak-gray);
+            color: var(--dark-gray);
             line-height: 1.7;
             overflow-x: hidden;
         }
@@ -96,7 +96,7 @@
             font-family: var(--font-display);
             font-size: 3.2rem;
             font-weight: 700;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
             margin-bottom: 25px;
             line-height: 1.2;
         }
@@ -175,7 +175,7 @@
             font-family: var(--font-display);
             font-size: 1.3rem;
             font-weight: 600;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
             margin-bottom: 15px;
         }
 
@@ -243,7 +243,7 @@
             font-family: var(--font-display);
             font-size: 2rem;
             font-weight: 700;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
             margin-bottom: 20px;
             position: relative;
             z-index: 1;
@@ -394,7 +394,7 @@
             font-family: var(--font-display);
             font-size: 1.4rem;
             font-weight: 600;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
             margin-bottom: 5px;
         }
 
@@ -577,7 +577,7 @@
             font-family: var(--font-display);
             font-size: 1.4rem;
             font-weight: 600;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
             margin-bottom: 15px;
         }
 
@@ -626,7 +626,7 @@
         .testimonial-text {
             font-family: var(--font-elegant);
             font-size: 1.5rem;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
             line-height: 1.8;
             margin-bottom: 30px;
             font-style: italic;
@@ -715,7 +715,7 @@
             font-family: var(--font-display);
             font-size: 1.15rem;
             font-weight: 600;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
         }
 
         .faq-icon {
@@ -793,7 +793,7 @@
 
         .about-floating-card {
             position: absolute;
-            background: var(--drak-gray);
+            background: var(--dark-gray);
             padding: 20px 30px;
             border-radius: 15px;
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
@@ -834,7 +834,7 @@
             font-family: var(--font-display);
             font-size: 2.8rem;
             font-weight: 700;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
             margin-bottom: 30px;
             line-height: 1.2;
         }
@@ -871,7 +871,7 @@
             font-family: var(--font-display);
             font-size: 1.2rem;
             font-weight: 600;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
         }
 
         .about-signature-text p {
@@ -896,7 +896,7 @@
             font-family: var(--font-display);
             font-size: 3rem;
             font-weight: 700;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
             margin-bottom: 25px;
             line-height: 1.2;
         }
@@ -940,7 +940,7 @@
         .contact-feature h4 {
             font-size: 1.1rem;
             font-weight: 600;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
             margin-bottom: 5px;
         }
 
@@ -961,7 +961,7 @@
             font-family: var(--font-display);
             font-size: 1.8rem;
             font-weight: 600;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
             margin-bottom: 30px;
             text-align: center;
         }
@@ -988,7 +988,7 @@
             border-radius: 12px;
             font-family: var(--font-body);
             font-size: 1rem;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
             transition: var(--transition-smooth);
         }
 
@@ -1016,7 +1016,7 @@
 
         .form-group select option {
             background: var(--light-beige);
-            color: var(--drak-gray);
+            color: var(--dark-gray);
         }
 
         .form-group textarea {
@@ -1116,7 +1116,7 @@
             font-family: var(--font-display);
             font-size: 1.5rem;
             font-weight: 700;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
         }
 
         .footer-logo-text span {
@@ -1144,7 +1144,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
             font-size: 1.1rem;
             transition: var(--transition-smooth);
         }
@@ -1160,7 +1160,7 @@
             font-family: var(--font-display);
             font-size: 1.1rem;
             font-weight: 600;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
             margin-bottom: 25px;
         }
 
@@ -1310,7 +1310,7 @@
         .mobile-menu-links a {
             font-size: 1.3rem;
             font-weight: 500;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
             transition: var(--transition-smooth);
         }
 
@@ -1324,7 +1324,7 @@
             top: 30px;
             right: 30px;
             font-size: 2rem;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
             cursor: pointer;
             transition: var(--transition-smooth);
         }

@@ -53,7 +53,7 @@
             </div>
             <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                 <div class="hero-image-wrapper">
-                    <!-- <img src="happy-girl-kitting.png" alt="happy-girl-kitting" class="hero-image-main"> -->
+                    <img :src="knittingGirl" alt="happy-girl-kitting" class="hero-image-main">
                     <div class="hero-image-frame"></div>
                     <div class="hero-floating-badge badge-1">
                         <div class="badge-icon">
@@ -117,17 +117,17 @@
 </div>
 </template>
 
-// <script>
-// // @ is an alias to /src
-// import HelloWorld from '@/components/home.vue'
+ <script>
+import knittingGirl from "../assets/happy-girl-kitting.png"
 
-// export default {
-//   name: 'HomeView',
-//   components: {
-//     HelloWorld
-//   }
-// }
-// </script>
+export default {
+  data(){
+    return{
+        knittingGirl
+    }
+  }
+}
+</script>
 <style scoped>
  .hero {
             min-height: 100vh;
@@ -235,7 +235,7 @@
             font-weight: 700;
             line-height: 1.1;
             margin-bottom: 30px;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
         }
 
         .hero-title span {
@@ -303,7 +303,7 @@
             align-items: center;
             gap: 12px;
             background: transparent;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
             padding: 18px 40px;
             border-radius: 50px;
             font-weight: 600;
@@ -354,9 +354,19 @@
             position: relative;
             display: inline-block;
         }
+
+         .hero-image-main {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 20px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 2;
+        }
+
 .hero-floating-badge {
             position: absolute;
-            background: var(--drak-gray);
+            background: var(--dark-gray);
             padding: 20px 25px;
             border-radius: 15px;
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
@@ -391,7 +401,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
             font-size: 1.3rem;
         }
 
@@ -466,7 +476,7 @@
             font-family: var(--font-display);
             font-size: 2.8rem;
             font-weight: 700;
-            color: var(--drak-gray);
+            color: var(--dark-gray);
             margin-bottom: 5px;
         }
 
@@ -474,5 +484,70 @@
             font-size: 0.95rem;
             color: rgba(255, 255, 255, 0.6);
         }
+/* Responsive */
+        @media (max-width: 1200px) {
+            .hero-container { grid-template-columns: 1fr; text-align: center; }
+            .hero-content { order: 2; }
+            .hero-image { order: 1; }
+            .hero-subtitle { margin: 0 auto 40px; }
+            .hero-cta-group { justify-content: center; }
+            .hero-stats { justify-content: center; }
+            .hero-image-main { max-width: 400px; margin: 0 auto; }
+            .hero-floating-badge { display: none; }
+            .authors-grid { grid-template-columns: repeat(2, 1fr); }
+            .problem-grid { grid-template-columns: repeat(2, 1fr); }
+            .solution-step { grid-template-columns: 1fr; gap: 40px; }
+            .solution-step:nth-child(even) { direction: ltr; }
+            .about-container { grid-template-columns: 1fr; text-align: center; }
+            .about-image-wrapper { max-width: 400px; margin: 0 auto; }
+            .contact-container { grid-template-columns: 1fr; }
+            .footer-main { grid-template-columns: repeat(2, 1fr); }
+        }
 
+        @media (max-width: 992px) {
+            :root { --section-padding: 80px; }
+            .navbar { padding: 15px 30px; }
+            .nav-links { display: none; }
+            .nav-cta { display: none; }
+            .mobile-menu-btn { display: flex; }
+            .hero { padding: 120px 30px 80px; }
+            .hero-title { font-size: 2.8rem; }
+            .section { padding: var(--section-padding) 30px; }
+            .section-title { font-size: 2.5rem; }
+            .trust-stats { grid-template-columns: repeat(2, 1fr); }
+            .why-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2.2rem; }
+            .hero-subtitle { font-size: 1.1rem; }
+            .hero-stats { flex-direction: column; gap: 30px; align-items: center; }
+            .btn-primary, .btn-secondary { padding: 15px 30px; font-size: 0.9rem; }
+            .authors-grid { grid-template-columns: 1fr; }
+            .problem-grid { grid-template-columns: 1fr; }
+            .why-grid { grid-template-columns: 1fr; }
+            .trust-stats { grid-template-columns: 1fr; }
+            .section-title { font-size: 2rem; }
+            .contact-form-wrapper { padding: 30px; }
+            .footer-main { grid-template-columns: 1fr; gap: 40px; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+            .footer-legal { flex-direction: column; gap: 10px; }
+            .footer-trust { flex-direction: column; }
+        }
+
+        @media (max-width: 480px) {
+            .navbar { padding: 15px 20px; }
+            .hero { padding: 100px 20px 60px; }
+            .hero-title { font-size: 1.8rem; }
+            .section { padding: 60px 20px; }
+            .section-title { font-size: 1.7rem; }
+            .author-card { padding: 25px; }
+            .book-cover { width: 150px; height: 225px; }
+            .testimonial-main { padding: 30px; }
+            .testimonial-text { font-size: 1.1rem; }
+            .testimonial-results { flex-direction: column; gap: 20px; }
+            .about-content h2 { font-size: 2rem; }
+            .contact-content h2 { font-size: 2rem; }
+            .footer { padding: 50px 20px 20px; }
+        }
 </style>
