@@ -13,13 +13,15 @@
         Select multiple PDF files and combine them into one PDF.
       </p>
 
+<div>select file
       <input
         type="file"
+        placeholder="Select file"
         accept="application/pdf"
         multiple
         @change="handleMergeFiles"
       />
-
+</div>
       <!-- File list -->
 
       <div v-if="mergeFiles.length" class="file-list">
@@ -567,13 +569,14 @@ export default {
 
 .pdf-tool {
 
-  max-width: 900px;
+  /* max-width: 900px; */
 
   margin: 0 auto;
 
   padding: 40px 20px;
 
   font-family: Arial, sans-serif;
+  background-color: rgb(241, 244, 245);
 
 }
 
@@ -596,6 +599,7 @@ h1 {
   padding: 25px;
 
   margin-bottom: 30px;
+  background-color: rgb(93, 81, 81);
 
 }
 
@@ -603,9 +607,18 @@ h1 {
 .tool-section h2 {
 
   margin-top: 0;
+  color: white;
 
 }
 
+.tool-section p {
+
+  margin-top: 0;
+  color: white;
+  padding-bottom: 30px;
+  padding-top: 25px;
+
+}
 
 .description {
 
