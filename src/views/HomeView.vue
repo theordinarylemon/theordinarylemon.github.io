@@ -18,13 +18,13 @@
             <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
                 <div class="hero-badge">
                     <i class="fas fa-star"></i>
-                    Dedicate Language Learner
+                    Share your travel vibe
                 </div>
                 <h1 class="hero-title">
-                    Transform Your Book Into a <span>Revenue-Generating Machine</span> That Sells While You Sleep
+                    Highlight your most precious <span>travel memory</span> right here right now
                 </h1>
                 <p class="hero-subtitle">
-                    Join the exclusive platform where serious authors connect with thousands of hungry readers actively searching for their next favorite book. No gatekeepers. No algorithm games. Just direct access to readers who actually buy.
+Do you have any travel experience that you value the most? Who did you meet? And what story happen there? Just write me your story and I'll repost it here for you.
                 </p>
                 <div class="hero-cta-group">
                     <a href="#contact" class="btn-primary">
@@ -33,7 +33,7 @@
                     </a>
                     <a href="#authors" class="btn-secondary">
                         <i class="fas fa-users"></i>
-                        See Featured Authors
+                        Read More Travel Story
                     </a>
                 </div>
                 <div class="hero-stats">
@@ -61,7 +61,7 @@
                         </div>
                         <div class="badge-content">
                             <h4></h4>
-                            <p>品质保证</p>
+                            <p>Wanna share?</p>
                         </div>
                     </div>
                     <div class="hero-floating-badge badge-2">
@@ -70,7 +70,7 @@
                         </div>
                         <div class="badge-content">
                             <h4></h4>
-                            <p>国际认证</p>
+                            <p>Come say hi</p>
                         </div>
                     </div>
                 </div>
@@ -114,13 +114,12 @@
         </div>
     </div>
 </section>
-<SnippetVue />
 </div>
 </template>
 
  <script>
 import knittingGirl from "../assets/happy-girl-kitting.png"
-import SnippetVue from "../components/Snippet.vue"
+
 
 export default {
   data(){
@@ -129,9 +128,6 @@ export default {
     }
   },
   
-  components: {
-    SnippetVue
-  }
 
 }
 </script>

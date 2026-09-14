@@ -3,11 +3,11 @@
   <nav class="navbar" :class="{scrolled: isScrolled}">
     <a href="#" class="nav-logo">
       <img :src="knittingGirl" alt="happy-girl-kitting">
-      <span class="nav-logo-text">MY <span>WEBSITE</span></span>
+      <span class="nav-logo-text">MY <span>TRAVELLING VIBE</span></span>
     </a>
     <div class="nav-links">
       <router-link to="/">Home</router-link> 
-      <router-link to="/product">Product</router-link>
+      <router-link to="/product">Travel</router-link>
       <router-link to="/about">About</router-link>
       <router-link to="/blog">Blog</router-link>
     </div>
@@ -25,7 +25,7 @@
     <i class="fas fa-times mobile-menu-close" @click="closeMobileMenu">X</i>
     <div class="mobile-menu-links">
       <router-link to="/" @click="closeMobileMenu">Home</router-link> 
-      <router-link to="/product" @click="closeMobileMenu">Product</router-link>
+      <router-link to="/product" @click="closeMobileMenu">Travel</router-link>
       <router-link to="/about" @click="closeMobileMenu">About</router-link>
       <router-link to="/blog" @click="closeMobileMenu">Blog</router-link>
     </div>

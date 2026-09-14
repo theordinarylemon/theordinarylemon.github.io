@@ -1,18 +1,6 @@
 <template>
   <div>
-    <SnippetVue />
+    Coming soon
   </div>
 </template>
-
-<script>
-import SnippetVue from '../components/Snippet.vue'
-
-
-export default {
-  name: "AboutVue",
-  components: {
-    SnippetVue
-  }
-}
-</script>
 

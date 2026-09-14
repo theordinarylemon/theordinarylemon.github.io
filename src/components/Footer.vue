@@ -4,10 +4,10 @@
             <div class="footer-main">
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <img src="happy-girl-kitting.png" alt="MY BRAND NAME">
-                        <span class="footer-logo-text">MY <span>WEBSITE</span></span>
+                        <img :src="happyGirl" alt="MY BRAND NAME">
+                        <span class="footer-logo-text">MY <span>TRAVELLING VIBE</span></span>
                     </div>
-                    <p>Connecting talented authors with passionate readers. Transform your book into a bestseller with personalized marketing strategies that deliver real results.</p>
+                        <p>Write down your travel memory about the people and places. Share your experience and get connected with the world.</p>
                     <div class="footer-social">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
@@ -19,13 +19,13 @@
                     <h4>Quick Links</h4>
                     <div class="footer-links">
                         <a href="#home">Home</a>
-                        <a href="#authors">Product</a>
+                        <a href="#authors">Travel</a>
                         <a href="#about">About Me</a>
                         <a href="#faq">FAQ</a>
                         <a href="#contact">Contact</a>
                     </div>
                 </div>
-                <div class="footer-column">
+                <!-- <div class="footer-column">
                     <h4>For Authors</h4>
                     <div class="footer-links">
                         <a href="#contact">Feature Your Book</a>
@@ -33,7 +33,7 @@
                         <a href="#testimonials">Author Results</a>
                         <a href="#about">Why Choose Me</a>
                     </div>
-                </div>
+                </div> -->
                 <div class="footer-column">
                     <h4>Contact</h4>
                     <div class="footer-contact-item">
@@ -42,23 +42,23 @@
                     </div>
                     <div class="footer-contact-item">
                         <i class="fas fa-globe"></i>
-                        <span>Available Worldwide</span>
+                        <span>Travel Worldwide</span>
                     </div>
                     <div class="footer-contact-item">
                         <i class="fas fa-clock"></i>
-                        <span>Response within 24-48 hours</span>
+                        <span>Share your story</span>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p class="footer-copyright">© 2026 MYSITE. All rights reserved.</p>
+                <p class="footer-copyright">© 2026 MY TRAVELLING VIBE. All rights reserved.</p>
                 <div class="footer-legal">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
                 </div>
                 <div class="footer-trust">
-                    <div class="footer-trust-badge"><i class="fas fa-lock"></i><span>SSL Secured</span></div>
-                    <div class="footer-trust-badge"><i class="fas fa-shield-alt"></i><span>Trusted Platform</span></div>
+                    <!-- <div class="footer-trust-badge"><i class="fas fa-lock"></i><span>SSL Secured</span></div> -->
+                    <!-- <div class="footer-trust-badge"><i class="fas fa-shield-alt"></i><span>Trusted Platform</span></div> -->
                 </div>
             </div>
         </div>
@@ -66,6 +66,8 @@
 </template>
 
 <script>
+import happyGirl from "../assets/happy-girl-kitting.png"
+
 export default{
     name: "FooterCom"
 }
