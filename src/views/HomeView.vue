@@ -29,7 +29,7 @@ Do you have any travel experience that you value the most? Who did you meet? And
                 <div class="hero-cta-group">
                     <a href="#contact" class="btn-primary">
                         <i class="fas fa-rocket"></i>
-                        Get in touch with me
+                        Feature your travel gadget
                     </a>
                     <a href="#authors" class="btn-secondary">
                         <i class="fas fa-users"></i>
