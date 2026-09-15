@@ -81,7 +81,7 @@ Do you have any travel experience that you value the most? Who did you meet? And
 <!-- Trust Bar -->
 <section class="trust-bar">
     <div class="trust-container">
-        <h3 class="trust-title">How many contries have you been travelling?</h3>
+        <h3 class="trust-title">How many contries have you been travelling to?</h3>
         <div class="trust-stats">
             <div class="trust-stat" data-aos="fade-up" data-aos-delay="0">
                 <div class="trust-stat-icon">
