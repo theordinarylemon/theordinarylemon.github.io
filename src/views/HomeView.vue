@@ -81,28 +81,28 @@ Do you have any travel experience that you value the most? Who did you meet? And
 <!-- Trust Bar -->
 <section class="trust-bar">
     <div class="trust-container">
-        <h3 class="trust-title">Trusted By Authors Who've Sold Thousands of Books</h3>
+        <h3 class="trust-title">How many contries have you been travelling?</h3>
         <div class="trust-stats">
             <div class="trust-stat" data-aos="fade-up" data-aos-delay="0">
                 <div class="trust-stat-icon">
                     <i class="fas fa-book"></i>
                 </div>
                 <div class="trust-stat-number">150+</div>
-                <div class="trust-stat-label">Authors Featured</div>
+                <div class="trust-stat-label">Location Count</div>
             </div>
             <div class="trust-stat" data-aos="fade-up" data-aos-delay="100">
                 <div class="trust-stat-icon">
                     <i class="fas fa-shopping-cart"></i>
                 </div>
                 <div class="trust-stat-number">1,000+</div>
-                <div class="trust-stat-label">Books Sold</div>
+                <div class="trust-stat-label">Travelling Note</div>
             </div>
             <div class="trust-stat" data-aos="fade-up" data-aos-delay="200">
                 <div class="trust-stat-icon">
                     <i class="fas fa-star"></i>
                 </div>
                 <div class="trust-stat-number">90%</div>
-                <div class="trust-stat-label">Author Satisfaction</div>
+                <div class="trust-stat-label">Share Thoughts</div>
             </div>
             <div class="trust-stat" data-aos="fade-up" data-aos-delay="300">
                 <div class="trust-stat-icon">
