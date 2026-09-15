@@ -39,15 +39,15 @@ Do you have any travel experience that you value the most? Who did you meet? And
                 <div class="hero-stats">
                     <div class="stat-item">
                         <div class="stat-number" data-count="150">0</div>
-                        <div class="stat-label">Authors Featured</div>
+                        <div class="stat-label">Travel Destination Featured</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number" data-count="1000">0</div>
-                        <div class="stat-label">+ Books Sold</div>
+                        <div class="stat-label">+ Travel Notes</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number" data-count="90">0</div>
-                        <div class="stat-label">% Satisfaction</div>
+                        <div class="stat-label">% Positive Energy</div>
                     </div>
                 </div>
             </div>

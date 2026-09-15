@@ -7,7 +7,7 @@
                         <img :src="happyGirl" alt="MY BRAND NAME">
                         <span class="footer-logo-text">MY <span>TRAVELLING VIBE</span></span>
                     </div>
-                        <p>Write down your travel memory about the people and places. Share your experience and get connected with the world.</p>
+                        <p>Write down your travel memory note about the people and places. Share your experience and get connected with the world.</p>
                     <div class="footer-social">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
