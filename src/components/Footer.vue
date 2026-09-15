@@ -69,7 +69,12 @@
 import happyGirl from "../assets/happy-girl-kitting.png"
 
 export default{
-    name: "FooterCom"
+    name: "FooterCom",
+    data(){
+    return{
+        happyGirl
+        }
+    }   
 }
 </script>
 
