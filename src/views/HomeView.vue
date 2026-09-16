@@ -53,7 +53,7 @@ Do you have any travel experience that you value the most? Who did you meet? And
             </div>
             <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                 <div class="hero-image-wrapper">
-                    <img :src="knittingGirl" alt="happy-girl-kitting" class="hero-image-main">
+                    <img :src="flowerMan" alt="travel-meet-flower-man-india" class="hero-image-main">
                     <div class="hero-image-frame"></div>
                     <div class="hero-floating-badge badge-1">
                         <div class="badge-icon">
@@ -118,13 +118,13 @@ Do you have any travel experience that you value the most? Who did you meet? And
 </template>
 
  <script>
-import knittingGirl from "../assets/happy-girl-kitting.png"
+import flowerMan from "../assets/travel-meet-flower-man-india.png"
 
 
 export default {
   data(){
     return{
-        knittingGirl
+        flowerMan
     }
   },
   
