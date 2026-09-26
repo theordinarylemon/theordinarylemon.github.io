@@ -118,7 +118,7 @@ Do you have any travel experience that you value the most? Who did you meet? And
 </template>
 
  <script>
-import flowerMan from "../assets/happy-girl-kitting"
+import flowerMan from "../assets/happy-girl-kitting.png"
 
 
 export default {
