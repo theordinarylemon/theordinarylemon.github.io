@@ -118,7 +118,7 @@ Do you have any travel experience that you value the most? Who did you meet? And
 </template>
 
  <script>
-import flowerMan from "../assets/travel-meet-flower-man-india.png"
+import flowerMan from "../assets/happy-girl-kitting"
 
 
 export default {
@@ -361,7 +361,7 @@ export default {
          .hero-image-main {
             width: 100%;
             max-width: 500px;
-            border-radius: 20px;
+            border-radius: 50px;
             box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
             position: relative;
             z-index: 2;
